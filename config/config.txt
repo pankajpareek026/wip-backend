@@ -1,0 +1,6 @@
+mongo Usename :helpmewip
+password :Qwz9pzqYRAKWsDAK
+
+// for WIP revenue
+usename:wipadmin
+pass :Fp9yD5ZCRewa3WyA
