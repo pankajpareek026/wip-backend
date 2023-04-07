@@ -1,6 +1,6 @@
 // this service will be used for generate ,send and veriyfy the OTP for Register route;
-import errorHandler from "../middlewares/errorHandler";
-import otpModel from "../model/otpModel"
+import errorHandler from "../middlewares/errorHandler.js";
+import otpModel from "../model/otpModel.js"
 
 class otpService {
     // generate New OTP
