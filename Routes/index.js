@@ -3,7 +3,7 @@ import authController from "../controllers/userAuthController.js";
 import { rateLimitor, auth } from '../middlewares/index.js'
 import refferalService from '../services/refferalService.js'
 import { registerController, otpController, plansController, loginController, depositController, depositAddressController, modifyDepositAddressController, refferController, withdrawController, transactionsController, userController, adminControllers, dashBoardController } from '../controllers/index.js'
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 const Storage = multer.diskStorage({
