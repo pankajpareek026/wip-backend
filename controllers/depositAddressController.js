@@ -10,8 +10,8 @@ const depositAddressController = {
         try {
             // console.log(req.headers)
             const getAddressSchema = Joi.object({
-                chain: Joi.String().required(),
-                coin: Joi.String().required()
+                chain: Joi.string().required(),
+                coin: Joi.string().required()
             })
             const { erro } = getAddressSchema.validate(req.headers)
             if (erro) {
