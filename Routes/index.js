@@ -2,7 +2,7 @@ import multer from "multer";
 import authController from "../controllers/userAuthController.js";
 import { rateLimitor, auth } from '../middlewares/index.js'
 import refferalService from '../services/refferalService.js'
-const { registerController, otpController, plansController, loginController, depositController, depositAddressController, modifyDepositAddressController, refferController, withdrawController, transactionsController, userController, adminControllers, dashBoardController } = require('../controllers/index.js')
+import { registerController, otpController, plansController, loginController, depositController, depositAddressController, modifyDepositAddressController, refferController, withdrawController, transactionsController, userController, adminControllers, dashBoardController } from '../controllers/index.js'
 const express = require('express');
 const router = express.Router();
 
