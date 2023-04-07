@@ -2,6 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import { errorHandler, rateLimitor } from './middlewares/index.js';
 import cors from 'cors'
+import { __dirname } from 'path'
 import { APP_PORT, DB_URL } from './config/index.js'
 import router from './Routes/index.js'
 import cronTask from './cronTask.js';

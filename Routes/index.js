@@ -13,7 +13,6 @@ const Storage = multer.diskStorage({
             if (error) console.log(error)
             console.log(success)
         })
-
     },
     filename: function (req, file, cb) {
         console.log(req.file)
@@ -25,7 +24,6 @@ const Storage = multer.diskStorage({
     }
 })
 const upload = multer({ storage: Storage })
-
 // client routes ......base api/
 router.post('/register', rateLimitor, refferalService.generateCode, registerController.register)
 router.post('/requestOtp/', rateLimitor, otpController.sendOtp)//to send otp
