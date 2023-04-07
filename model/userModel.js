@@ -1,4 +1,3 @@
-import { number } from "joi";
 import { Schema, model } from "mongoose";
 const userSchema = new Schema(
     {
