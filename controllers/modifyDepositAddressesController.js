@@ -1,5 +1,5 @@
 // controller to creacrte delete and update deposit addresses
-import Joi, { string }  from "joi"
+import Joi from "joi"
 import depositAddressModel from "../model/depositAddressModel.js"
 
 const modifyDepositAddressController ={
