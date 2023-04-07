@@ -2,7 +2,10 @@ import express from 'express'
 import mongoose from 'mongoose'
 import { errorHandler, rateLimitor } from './middlewares/index.js';
 import cors from 'cors'
-import { __dirname } from 'path'
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 import { APP_PORT, DB_URL } from './config/index.js'
 import router from './Routes/index.js'
 import cronTask from './cronTask.js';
