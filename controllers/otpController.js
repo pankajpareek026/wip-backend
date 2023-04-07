@@ -44,7 +44,7 @@ const otpController = {
             if (otpStatus.otp) {
                 res.json({
                     type: "success",
-                    message: "OTP send successfully !"
+                    message:  `OTP send successfully : ${newOtp} `
                 })
             }
             else {
