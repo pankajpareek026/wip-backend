@@ -5,7 +5,7 @@ import router from './Routes/index.js'
 import cronTask from './cronTask.js';
 import cookieParser from 'cookie-parser'
 require('dotenv').config();
-const bodyParser = require('body-parser');
+import bodyParser from 'body-parser';
 
 
 
