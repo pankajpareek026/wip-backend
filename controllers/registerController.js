@@ -1,6 +1,6 @@
 import e from "express";
 import Joi from "joi";
-const bcrypt = require('bcrypt');
+import bcrypt from 'bcrypt'
 import userModel from "../model/userModel.js";
 import CustomErrorHandler from "../services/CustomErrorHandler.js";
 import JwtService from "../services/jwtService.js";
