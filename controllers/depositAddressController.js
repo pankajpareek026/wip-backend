@@ -1,8 +1,8 @@
 // function to send deposit addreess to use on request
 import Joi from "joi"
-import depositAddressModel from "../model/depositAddressModel"
+import depositAddressModel from "../model/depositAddressModel.js"
 
-import CustomErrorHandler from "../services/CustomErrorHandler"
+import CustomErrorHandler from "../services/CustomErrorHandler.js"
 
 const depositAddressController = {
     async getAddress(req, res, next) {

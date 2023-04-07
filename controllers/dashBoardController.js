@@ -1,8 +1,8 @@
 // import { auth } from "../middlewares"
 import mongoose from "mongoose"
-import userModel from "../model/userModel"
-import CustomErrorHandler from "../services/CustomErrorHandler"
-import buyedplanModel from "../model/buyedPlanModel"
+import userModel from "../model/userModel.js"
+import CustomErrorHandler from "../services/CustomErrorHandler.js"
+import buyedplanModel from "../model/buyedPlanModel.js"
 
 const dashBoardController = {
     async getUserDashboardData(req, res, next) {

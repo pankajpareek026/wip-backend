@@ -1,8 +1,8 @@
 import Joi from "joi";
 import bcypt from 'bcrypt'
-import userModel from "../model/userModel";
-import CustomErrorHandler from "../services/CustomErrorHandler";
-import JwtService from "../services/jwtService";
+import userModel from "../model/userModel.js";
+import CustomErrorHandler from "../services/CustomErrorHandler.js";
+import JwtService from "../services/jwtService.js";
 const loginController = {
     async login(req, res, next) {
         // 

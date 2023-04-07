@@ -1,8 +1,8 @@
 import Joi from "joi"
-import depositModel from "../model/deposiModel"
-import userModel from "../model/userModel"
-import withdrawModel from "../model/withdrawModel"
-import CustomErrorHandler from "../services/CustomErrorHandler"
+import depositModel from "../model/deposiModel.js"
+import userModel from "../model/userModel.js"
+import withdrawModel from "../model/withdrawModel.js"
+import CustomErrorHandler from "../services/CustomErrorHandler.js"
 const adminControllers = {
     async adminGetPendingDeposits(req, res, next) {
         try {

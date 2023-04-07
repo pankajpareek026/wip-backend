@@ -1,9 +1,9 @@
 import Joi from "joi"
 import otpModel from "../model/otpModel";
-import userModel from "../model/userModel";
+import userModel from "../model/userModel.js";
 const random = require('random-ext')
-import CustomErrorHandler from "../services/CustomErrorHandler";
-import otpService from "../services/otpService";
+import CustomErrorHandler from "../services/CustomErrorHandler.js";
+import otpService from "../services/otpService.js";
 const otpController = {
     async sendOtp(req, res, next) {
         try {

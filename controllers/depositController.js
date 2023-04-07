@@ -1,8 +1,8 @@
 import Joi from "joi";
-import depositModel from "../model/deposiModel";
+import depositModel from "../model/deposiModel.js";
 import moment from 'moment';
-import CustomErrorHandler from "../services/CustomErrorHandler";
-import userModel from "../model/userModel";
+import CustomErrorHandler from "../services/CustomErrorHandler.js";
+import userModel from "../model/userModel.js";
 import { mongoose } from "mongoose";
 const depositController = {
     async deposit(req, res, next) {

@@ -1,9 +1,9 @@
 import Joi from 'joi';
 import moment from 'moment';
-import userModel from '../model/userModel';
-import withdrawModel from '../model/withdrawModel';
+import userModel from '../model/userModel.js';
+import withdrawModel from '../model/withdrawModel.js';
 import mongoose from 'mongoose';
-import CustomErrorHandler from '../services/CustomErrorHandler';
+import CustomErrorHandler from '../services/CustomErrorHandler.js';
 const print = console.log
 
 // control wothdrowls request

@@ -1,9 +1,9 @@
 import Joi from "joi"
-import buyedplanModel from "../model/buyedPlanModel"
-import planModel from "../model/planModel"
-import userModel from "../model/userModel"
+import buyedplanModel from "../model/buyedPlanModel.js"
+import planModel from "../model/planModel.js"
+import userModel from "../model/userModel.js"
 import moment from 'moment'
-import CustomErrorHandler from "../services/CustomErrorHandler"
+import CustomErrorHandler from "../services/CustomErrorHandler.js"
 
 const plansController = {
     async getPlans(req, res, next) {

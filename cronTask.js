@@ -1,6 +1,6 @@
 
 import cron from 'node-cron'
-import buyedplanModel from './model/buyedPlanModel'
+import buyedplanModel from './model/buyedPlanModel.js'
 import userModel from './model/userModel'
 import moment from 'moment'
 //schedule a job

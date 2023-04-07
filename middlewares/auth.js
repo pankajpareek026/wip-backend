@@ -1,5 +1,5 @@
-import CustomErrorHandler from "../services/CustomErrorHandler";
-import JwtService from "../services/jwtService";
+import CustomErrorHandler from "../services/CustomErrorHandler.js";
+import JwtService from "../services/jwtService.js";
 const auth = async (req, res, next) => {
 
     console.log(0,'Auth called !')

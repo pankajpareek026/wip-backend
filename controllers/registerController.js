@@ -1,9 +1,9 @@
 import e from "express";
 import Joi from "joi";
 const bcrypt = require('bcrypt');
-import userModel from "../model/userModel";
-import CustomErrorHandler from "../services/CustomErrorHandler";
-import JwtService from "../services/jwtService";
+import userModel from "../model/userModel.js";
+import CustomErrorHandler from "../services/CustomErrorHandler.js";
+import JwtService from "../services/jwtService.js";
 const registerController = {
     async register(req, res, next) {
         // console.log(req.body)
