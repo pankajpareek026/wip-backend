@@ -1,3 +1,5 @@
+import express from 'express'
+import mongoose from 'mongoose'
 import { errorHandler, rateLimitor } from './middlewares/index.js';
 import cors from 'cors'
 import { APP_PORT, DB_URL } from './config/index.js'
@@ -11,8 +13,7 @@ import bodyParser from 'body-parser';
 
 
 // const upload=require('multer')
-const express = require('express');
-const mongoose = require('mongoose')
+
 
 
 const app = express();
