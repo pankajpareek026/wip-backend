@@ -4,7 +4,8 @@ import { APP_PORT, DB_URL } from './config/index.js'
 import router from './Routes/index.js'
 import cronTask from './cronTask.js';
 import cookieParser from 'cookie-parser'
-require('dotenv').config();
+import dotenv from 'dotenv'
+doten .config();
 import bodyParser from 'body-parser';
 
 
