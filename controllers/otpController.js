@@ -1,5 +1,5 @@
 import Joi from "joi"
-import otpModel from "../model/otpModel";
+import otpModel from "../model/otpMode.js";
 import userModel from "../model/userModel.js";
 const random = require('random-ext')
 import CustomErrorHandler from "../services/CustomErrorHandler.js";
