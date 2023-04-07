@@ -1,7 +1,7 @@
-import { errorHandler, rateLimitor } from './middlewares/';
+import { errorHandler, rateLimitor } from './middlewares/index.js';
 import cors from 'cors'
-import { APP_PORT, DB_URL } from './config'
-import router from './Routes'
+import { APP_PORT, DB_URL } from './config/index.js'
+import router from './Routes/index.js'
 import cronTask from './cronTask';
 import cookieParser from 'cookie-parser'
 require('dotenv').config();
@@ -40,7 +40,7 @@ app.use('/api/test', rateLimitor)
 //
 
 
-app.listen(APP_PORT,(error) => {
+app.listen(APP_PORT, (error) => {
     if (error) console.log(error)
     console.log("app is running on :", APP_PORT);
 
