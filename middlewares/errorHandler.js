@@ -1,6 +1,6 @@
 
 import { DEBUG_MODE } from '../config/index.js'
-import ValidationError from 'joi';
+// import ValidationError from 'joi';
 import CustomErroHandler from '../services/CustomErrorHandler.js';
 const errorHandler = (error, req, res, next) => {
     let statusCode = 500;
@@ -9,12 +9,12 @@ const errorHandler = (error, req, res, next) => {
         ...(DEBUG_MODE === 'true' && { originalErrorAtErrorHandler: error.message }),
     }
     // console.log("Errror Handler Clled", error)
-    if (error instanceof ValidationError) {
-        statusCode = 422;
-        data = {
-            message: error.message
-        }
-    }
+    // if (error instanceof ValidationError) {
+    //     statusCode = 422;
+    //     data = {
+    //         message: error.message
+    //     }
+    // }
     if (error instanceof CustomErroHandler) {
         // statusCode = error.status;
         // statusType=error.type
