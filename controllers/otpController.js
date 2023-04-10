@@ -9,7 +9,7 @@ const otpController = {
         try {
             console.log(req.body)
             console.log(req.rawHeaders[1])
-            if (req.rawHeaders[1] != "localhost:5000") {
+            if (req.rawHeaders[1] != "wip-mhap.onrender.com") {
                 return next(CustomErrorHandler.unAuthorised("Unuthorised Access "))
 
             }
@@ -44,7 +44,7 @@ const otpController = {
             if (otpStatus.otp) {
                 res.json({
                     type: "success",
-                    message:  `OTP send successfully : ${newOtp} `
+                    message: `OTP send successfully : ${newOtp} `
                 })
             }
             else {
