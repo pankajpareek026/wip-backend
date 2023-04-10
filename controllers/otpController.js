@@ -9,10 +9,10 @@ const otpController = {
         try {
             console.log(req.body)
             console.log(req.rawHeaders[1])
-            if (req.rawHeaders[1] != "wip-mhap.onrender.com") {
+            /*if (req.rawHeaders[1] != "wip-mhap.onrender.com") {
                 return next(CustomErrorHandler.unAuthorised("Unuthorised Access "))
 
-            }
+            }*/
             if (!req.body.mobileNo) {
                 return next(CustomErrorHandler.invalidMobile())
             }
