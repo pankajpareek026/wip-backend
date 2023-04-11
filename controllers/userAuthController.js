@@ -3,13 +3,14 @@ import CustomErrorHandler from "../services/CustomErrorHandler.js";
 import JwtService from "../services/jwtService.js";
 const authController = async (req, res, next) => {
     const authCookie = req.cookies.Auth0
-    const authHeader = req.headers.auth0
+    // const authHeader = req.headers.auth0
     // console.log("auth controller is colled !")
     //    const result=JwtService.verify(req.cookeie)
     // console.log("deposit cookie:", req.cookies.Auth0)
     // console.log("deposit Header:", req.headers.auth0)
     // console.log("result :", authCookie == authHeader)
-    if ((authCookie && authHeader) && (authCookie == authHeader)) {
+    // if ((authCookie && authHeader) && (authCookie == authHeader)) {
+    if (authCookie) {
         try {
             const result = JwtService.verify(authCookie)
             // console.log("Jwt in AUTH controller", result)

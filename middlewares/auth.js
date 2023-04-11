@@ -2,13 +2,14 @@ import CustomErrorHandler from "../services/CustomErrorHandler.js";
 import JwtService from "../services/jwtService.js";
 const auth = async (req, res, next) => {
 
-    console.log(0,'Auth called !')
+    console.log(0, 'Auth called !')
     const authCookie = req.cookies.Auth0
-    const authHeader = req.headers.auth0
+    // const authHeader = req.headers.auth0
     //    const result=JwtService.verify(req.cookeie)
     // console.log("auth cookie:", req.cookies.Auth0)
-    console.log(1,"verified At AUTH : =>", req.headers.auth0 === authCookie)
-    if ((authCookie && authHeader) && (authCookie === authHeader)) {
+    // console.log(1,"verified At AUTH : =>", req.headers.auth0 === authCookie)
+    // console.log(1,"verified At AUTH : =>", req.headers.auth0 === authCookie)
+    if (authCookie) {
         try {
             const result = JwtService.verify(authCookie)
             // console.log("Jwt in AUTH", result)
@@ -19,16 +20,16 @@ const auth = async (req, res, next) => {
                 next()
             }
         } catch (error) {
-            console.log(2,"Catch Error :", error.message)
+            console.log(2, "Catch Error :", error.message)
             if (error.message === "jwt expired") {
-                console.log(3,"auth Error Line 22 :", error)
+                console.log(3, "auth Error Line 22 :", error)
 
                 next(CustomErrorHandler.tokenExpired("session expired"))
                 res.clearCookie('Auth0')
             }
             console.log("next error", error)
-          return next(error)
-           
+            return next(error)
+
         }
     }
     else {
